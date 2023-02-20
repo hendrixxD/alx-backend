@@ -11,8 +11,8 @@ def index_range(page, page_size):
         page_size: page size
     """
 
-    page = int(input('enter a page number: '))
-    page_size = int(input('enter a page size: '))
+    # page = int(input('enter a page number: '))
+    # page_size = int(input('enter a page size: '))
 
     start_page_index = page_size * (page - 1)
     end_page_size_index = start_page_index + page_size
