@@ -1,5 +1,3 @@
-import csv
-impo
 #!/usr/bin/env pytthon3
 """ task """
 
