@@ -23,7 +23,7 @@ class BasicCache(BaseCaching):
         assigns dic self.cache_Data
         the item value for the key
         """
-        if key or item is None:
+        if key is None or item is None:
             pass
         else:
             self.cache_data[key] = item
