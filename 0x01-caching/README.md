@@ -4,7 +4,7 @@
 All your classes must inherit from `BaseCaching` defined below:
 
 
-`#!/usr/bin/python3
+#!/usr/bin/python3
 """ BaseCaching module
 """
 
@@ -35,7 +35,7 @@ class BaseCaching():
     def get(self, key):
         """ Get an item by key
         """
-        raise NotImplementedError("get must be implemented in your cache class")`
+        raise NotImplementedError("get must be implemented in your cache class")
 
 ## <b>Tasks</b>
 - 0. Basic dictionary
