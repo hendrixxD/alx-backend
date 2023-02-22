@@ -3,7 +3,7 @@
 FIFO caching
 """
 
-from base_chaching import BaseCaching
+from 0-basic_cache import BaseCache
 
 
 class FIFOCache(BaseCache):
