@@ -3,8 +3,8 @@
 Basic dictionary
 """
 
-BaseChaching = __import__('BaseCaching').BaseCaching
-
+# BaseCaching = __import__('base_chaching').BaseCaching
+from base_chaching import BaseCaching
 
 class BasicCache(BaseCaching):
     """
@@ -36,4 +36,4 @@ class BasicCache(BaseCaching):
         if key is None or key not in self.cache_data:
             return None
         else:
-            return self.cache_data[key]
+            return self.cache_data.get(key)
