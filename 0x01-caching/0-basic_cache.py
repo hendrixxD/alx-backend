@@ -3,8 +3,8 @@
 Basic dictionary
 """
 
-# BaseCaching = __import__('base_chaching').BaseCaching
 from base_chaching import BaseCaching
+
 
 class BasicCache(BaseCaching):
     """
