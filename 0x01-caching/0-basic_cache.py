@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
+""" BaseCaching module
 """
-Basic dictionary
-"""
-
-from base_chaching import BaseCaching
+from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """
-    Base class: BaseCaching
+    """ Defines a class for caching information in key-value pairs
+    Methods:
+        put(key, item) - store a key-value pair
+        get(key) - retrieve the value associated with a key
     """
 
     def __init__(self):
         """
-        initialize the class using
-        __init__ parent class
+        Initialize the class using the parent class __init__ method
         """
         BaseCaching.__init__(self)
 
     def put(self, key, item):
         """
-        assigns dic self.cache_Data
-        the item value for the key
+        Store a key-value pair
+        Args:
+            Key
+            Item
         """
         if key is None or item is None:
             pass
@@ -30,10 +31,10 @@ class BasicCache(BaseCaching):
 
     def get(self, key):
         """
-        args:
-         key
+        Return value linked to key.
+        If key is None or doesn't exist, return None
         """
-        if key is None or key not in self.cache_data:
+        if key is None and key not in self.cache_data:
             return None
         else:
             return self.cache_data.get(key)
