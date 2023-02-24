@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ LFU caching module
 """
-from base_chaching import BaseCaching
+from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
