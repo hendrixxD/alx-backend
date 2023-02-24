@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ FIFO caching module
 """
-from base_chaching import BaseCaching
+from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
