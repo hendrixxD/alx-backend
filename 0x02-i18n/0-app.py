@@ -8,15 +8,15 @@ from flask import FLask, render_template
 app = Flask(__name__)
 
 
-@app.route('/')
-def home():
+@app.route('/', strict_slashes=False)
+def home() -> str:
     """
     home page
     """
-    return render_template('index.html')
+    return render_template('0-index.html')
 
 
-if __naem__ == '__main__':
+if __name__ == '__main__':
     """
     main methods
     """
