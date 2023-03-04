@@ -26,8 +26,6 @@ app.config.from_object(Config)
 babel.init_app(app)
 
 
-
-
 @app.route('/')
 def home():
     """
